@@ -29,7 +29,9 @@
             [promesa.impl.scheduler :as ps])
   #?(:clj
      (:import java.util.concurrent.CompletableFuture
-              java.util.concurrent.CompletionStage)))
+              java.util.concurrent.CompletionStage)
+     :cljs
+     (:require-macros [promesa.core])))
 
 ;; --- Global Constants
 
